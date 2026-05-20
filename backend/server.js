@@ -16,7 +16,9 @@ import shoppingListRoutes from './routes/shoppingList.js';
 const app = express();
 
 // Middlewares
-app.use(cors());
+app.use(cors({
+    origin: "https://frontend-pwy4.onrender.com"
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
