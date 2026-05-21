@@ -17,7 +17,7 @@ const app = express();
 
 // Middlewares
 app.use(cors({
-    origin: "https://frontend-qpvo.onrender.com/login"
+    origin: "https://frontend-qpvo.onrender.com"
 }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
