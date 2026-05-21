@@ -59,7 +59,7 @@ export const generateRecipe = async ({ ingredients, dietaryRestrictions = [], cu
     Make sure the recipe is creative, delicious, and uses the provided ingredients effectively.`;
         try {
             const response = await ai.models.generateContent({
-                model: "gemini-1.5-flash",
+                model: "gemini-2.5-flash",
                 contents: prompt,
             });
 
@@ -99,7 +99,7 @@ export const generatePantrySuggestions = async (pantryItems, expiringItems = [])
 
     try {
         const response = await ai.models.generateContent({
-            model: "gemini-1.5-flash",
+            model: "gemini-2.5-flash",
             contents: prompt,
         });
 
@@ -133,7 +133,7 @@ export const generateCookingTips = async (recipe) => {
 
     try {
         const response = await ai.models.generateContent({
-            model: "gemini-1.5-flash",
+            model: "gemini-2.5-flash",
             contents: prompt,
         });
 
